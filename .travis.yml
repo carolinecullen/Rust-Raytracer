@@ -1,0 +1,26 @@
+# Travis CI script. See https://travis-ci.org/ for more info.
+
+language: rust
+rust:
+    - stable
+    - 1.27.0
+matrix:
+    allow_failures:
+        - rust: beta
+    fast_finish: true
+dist: trusty
+sudo: false
+before_script:
+    - cargo uninstall rustfmt || true
+    - cargo install --list
+    - rustup toolchain install stable
+    - rustup component add --toolchain=stable rustfmt-preview
+    - rustup component list --toolchain=stable
+    - rustup show
+    - rustfmt +stable --version || echo fail
+    - rustup update
+    - rustfmt +stable --version
+script: ./tests.sh
+cache:
+    cargo: true
+
