@@ -19,11 +19,7 @@ else
 fi
 
 # Make sure the code builds in debug mode.
-banner "Rust debug build"
 cargo build
 
 # Run the tests. We run these in debug mode so that assertions are enabled.
-banner "Rust unit tests"
 cargo test --all
-
-banner "OK"
