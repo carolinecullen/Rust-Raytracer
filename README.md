@@ -14,5 +14,5 @@ Add path to .bashrc and then run the following commands:
 ``` {.sourceCode .sh}
 cd src
 cargo build
-raytracer [OPTIONS]
+raytracer [OPTIONS] <input-file>
 ```

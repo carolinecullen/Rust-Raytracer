@@ -1,0 +1,1 @@
+{"rustc":5362242119021711120,"features":"[]","target":17616315677419113274,"profile":15351318969164810688,"path":1036222786711178230,"deps":[["clap v2.32.0","clap",17273972495016171208]],"local":[{"MtimeBased":[[1536254000,128308718],".fingerprint/raytracer-da7937c3064d7fef/dep-test-bin-raytracer-da7937c3064d7fef"]}],"rustflags":[],"edition":"Edition2015"}
