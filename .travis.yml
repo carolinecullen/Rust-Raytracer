@@ -21,6 +21,7 @@ before_script:
     - rustup update
     - rustfmt +stable --version
     - chmod +x tests.sh
+    - chmod +x format-all.sh
 script: ./tests.sh
 cache:
     cargo: true
