@@ -6,7 +6,7 @@ topdir=$(dirname "$0")
 cd "$topdir"
 
 if type rustfmt > /dev/null; then
-    if ! "$topdir/format-all.sh" --check ; then
+    if ! "format-all.sh" --check ; then
         echo "Formatting diffs detected! Run \"cargo fmt --all\" to correct."
         exit 1
     fi
