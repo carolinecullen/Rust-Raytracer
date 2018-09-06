@@ -20,7 +20,7 @@ before_script:
     - rustfmt +stable --version || echo fail
     - rustup update
     - rustfmt +stable --version
-    - chmod +x build.sh
+    - chmod +x tests.sh
 script: ./tests.sh
 cache:
     cargo: true
