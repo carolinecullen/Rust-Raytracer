@@ -1,10 +1,22 @@
+//! CPU Raytracer written in rust
+//!
+//! User-friendly raytracer that is thread safe, memory safe, with quick compilation times.
+
+#![deny(unused_extern_crates)]
+#![warn(unused_import_braces)]
+#![cfg_attr(feature = "std", deny(unstable_features))]
+
 extern crate clap;
+#[macro_use]
+extern crate nom;
 
 use clap::{App, Arg, SubCommand};
 use std::io::{self, Write};
 use std::process;
 
 mod parser;
+mod raytracer;
+mod scene;
 
 fn main() {
     let matches = App::new("Rust Raytracer")

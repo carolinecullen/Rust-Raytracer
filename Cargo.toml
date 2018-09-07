@@ -5,3 +5,4 @@ authors = ["ccullen <cullen.caroline@gmail.com>"]
 
 [dependencies]
 clap = "2.32.0"
+nom = "4.0.0"
